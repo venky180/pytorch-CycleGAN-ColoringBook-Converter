@@ -1,52 +1,49 @@
 ---
-layout: page
-title: "Coloring Book Generator"
-permalink: /readme
+layout: default
+title: CycleGAN Coloring Book Generator
 ---
 
-## Project Name
-
-CycleGAN Coloring Book Generator
+# CycleGAN Coloring Book Generator
 
 ## Description
 
 The CycleGAN Coloring Book Generator is a project that employs the CycleGAN (Cycle-Consistent Generative Adversarial Network) architecture to transform normal photos into coloring book versions. By leveraging the power of CycleGAN, the project enables the conversion of images from one domain (normal photos) to another domain (coloring book line drawings) without the need for paired training data. The generator network learns to map images from the source domain to the target domain, while the discriminator network provides feedback to ensure the realism of the generated coloring book images. This project provides a user-friendly interface to facilitate the seamless generation of coloring book versions from user-supplied photographs.
 
 ## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Dataset](#dataset)
-- [Training](#training)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
+* TOC
+{:toc}
 
 ## Installation
 
 To use this project locally, follow the steps below:
 
-1. Clone the repository: `git clone https://github.com/venky180/pytorch-CycleGAN-ColoringBook-Converter.git
+1. Clone the repository: `git clone https://github.com/your-username/cyclegan-coloring-book-generator.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
 
+## Usage
+
+1. Prepare your normal photos dataset and ensure they are in a compatible format (e.g., JPEG, PNG).
+2. Run the script `train_cyclegan.py` to train the CycleGAN model on your dataset.
+3. After training, run the script `generate_coloring_book.py` to generate coloring book versions from your input photos.
+4. Provide the path to your input photo.
+5. Click on the "Generate" button to create the coloring book version.
+6. Find the output coloring book image in the specified output folder.
 
 ## Features
 
-- Conversion of normal photos into coloring book versions using CycleGAN.
-- Training of the CycleGAN model on user-supplied datasets.
-- User-friendly interface for seamless interaction and effortless generation of coloring book images.
-- Real-time preview of the generated coloring book transformation.
+* Conversion of normal photos into coloring book versions using CycleGAN.
+* Training of the CycleGAN model on user-supplied datasets.
+* User-friendly interface for seamless interaction and effortless generation of coloring book images.
+* Real-time preview of the generated coloring book transformation.
 
 ## Technologies
 
 The project is implemented using the following technologies:
 
-- Python: Programming language used for development.
-- PyTorch: Deep learning framework for training and implementing the CycleGAN model.
-- Check Original Repo: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
-- OpenCV: Library for image processing and manipulation.
+* Python: Programming language used for development.
+* PyTorch: Deep learning framework for training and implementing the CycleGAN model.
+* OpenCV: Library for image processing and manipulation.
+* GUI Framework (e.g., Tkinter): Used for creating the user interface.
 
 ## Dataset
 
