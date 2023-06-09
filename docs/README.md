@@ -1,7 +1,8 @@
+---
 layout: page
 title: "Coloring Book Generator"
 permalink: /readme
-
+---
 
 ## Project Name
 
